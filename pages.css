@@ -1,0 +1,129 @@
+* {
+     margin    : 0;
+     padding   : 0;
+     box-sizing: border-box;
+}
+
+body {
+     /*background     : url("./bg-selectedworks.jpg") fixed no-repeat center;*/
+     background-size: cover;
+}
+
+.banner img {
+     height: 100vh;
+     width: 100%;
+     margin: 2rem 0;
+}
+
+.banner {
+     display        : flex;
+     justify-content: center;
+     align-items    : center;
+}
+
+.description {
+     margin: 1rem 3rem;
+}
+
+.description p {
+     text-align: justify;
+     font-size : large;
+}
+
+h1 {
+     text-align: center;
+}
+
+.container {
+     background   : #0e0a0a;
+     color        : white;
+     border-radius: 10px;
+     box-shadow   : 0 0 25px black;
+     width: 80% !important;
+}
+
+.grid_images {
+     display              : -ms-grid;
+     display              : grid;
+     gap                  : 1rem;
+     -ms-grid-rows        : (1fr)[2];
+     grid-template-rows   : repeat(2, 1fr);
+     -ms-grid-columns     : (1fr)[3];
+     grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+     padding        : 0 1rem;
+     width          : 100%;
+     height         : 700px;
+     object-position: center;
+
+}
+
+@media screen and (max-width:1000px) {
+     .grid_images {
+          display              : -ms-grid;
+          display              : grid;
+          -ms-grid-rows        : (1fr)[2];
+          grid-template-rows   : repeat(2, 1fr);
+          -ms-grid-columns     : (1fr)[2];
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .banner img {
+          height: 90vh;
+          width: 100%;
+     }
+
+     .grid_images img {
+          margin: 1rem;
+     }
+     .struc{
+          flex-direction: column;
+          flex: 100%;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+     }
+
+}
+
+@media screen and (max-width:700px) {
+
+     .grid_images {
+
+          display: block;
+          margin : 1rem 0;
+     }
+
+     .grid_images img {
+          margin: 2rem 0;
+     }
+
+}
+
+
+.credits {
+     display        : flex;
+     justify-content: space-between;
+     align-items    : center;
+}
+
+.struc{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+
+
+
+}
+.links{
+display: block !important;
+margin: 0 1rem;
+}
+.links iframe{
+     width: 100%;
+
+}
+.carousel-item img{
+     width: 50%;
+     height: 50%;
+}
