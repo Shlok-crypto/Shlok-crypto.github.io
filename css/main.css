@@ -3889,6 +3889,79 @@ i {
   color: #dfc13f;
 }
 
+/* Works Subsections & Models Grid */
+.works-subsection-heading {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.works-subsection-desc {
+  font-size: 1.5rem;
+  color: #666666;
+  max-width: 760px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1140px;
+  margin: 0 auto 5rem auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .models-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.project-card__thumb {
+  width: calc(100% + 48px);
+  margin: -28px -24px 20px -24px;
+  height: 175px;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: #f8fafc;
+  display: block;
+}
+
+.project-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-card__thumb img {
+  transform: scale(1.04);
+}
+
+.project-card__badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 9px;
+  border-radius: 12px;
+  background: #fef9c3;
+  color: #713f12;
+  border: 1px solid #fde047;
+  margin-bottom: 12px;
+}
+
 /* Project Cards */
 .projects-grid {
   display: grid;
@@ -3931,6 +4004,8 @@ i {
   margin-top: 0;
   margin-bottom: 12px;
   line-height: 1.3;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .project-card__desc {

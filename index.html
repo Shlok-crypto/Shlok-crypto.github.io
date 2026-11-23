@@ -52,7 +52,9 @@
       "sameAs": [
         "https://www.linkedin.com/in/shlok-tomar-us",
         "https://github.com/shlok-crypto",
-        "https://arxiv.org/abs/2512.15076"
+        "https://arxiv.org/abs/2512.15076",
+        "https://huggingface.co/CSI-lab",
+        'https://scholar.google.com/citations?user=xx0drooAAAAJ&hl=en'
       ],
       "knowsAbout": [
         "Artificial Intelligence",
@@ -883,11 +885,174 @@
             <div class="column large-full">
                 <h2 class="section-heading section-heading--centerbottom" style="color: #111111;">Selected Works</h2>
                 <p class="section-desc" style="color: #555555; max-width: 760px; margin: 0 auto 3rem auto;">
-                    Featured technical projects across artificial intelligence, large language models, computer vision,
-                    and secure distributed software.
+                    Featured open-source AI retrieval models, systems architectures, and production-grade software.
                 </p>
             </div>
         </div> <!-- end heading-block -->
+
+        <!-- Subsection 1: Open-Source AI & Embedding Models -->
+        <div class="works-subsection" data-aos="fade-up">
+            <h3 class="works-subsection-heading">Open-Source AI &amp; Embedding Models</h3>
+            <p class="works-subsection-desc">
+                Specialized domain-adapted legal embedding architectures engineered for semantic statutory search,
+                on-device retrieval, and high-accuracy RAG pipelines.
+            </p>
+        </div>
+
+        <div class="models-grid">
+
+            <!-- Model 1: US-State-Law-EmbeddingGemma-2 -->
+            <div class="project-card" data-aos="fade-up">
+                <div>
+                    <div class="project-card__thumb">
+                        <picture>
+                            <source srcset="images/models/us_state_law_gemma2.webp" type="image/webp">
+                            <img src="images/models/us_state_law_gemma2.jpg"
+                                alt="US-State-Law-EmbeddingGemma-2 Architecture Banner" width="800" height="295"
+                                loading="lazy">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="project-card__badge"> AI Model &bull; Flagship 270M</span>
+                    </div>
+                    <h3 class="project-card__title">US-State-Law-EmbeddingGemma-2</h3>
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/US_State_Law_EmbeddingGemma_2.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <p class="project-card__desc">
+                            I fine-tuned a specialized 270M-parameter dense retrieval model on 504K+ Revised Code of
+                            Washington (RCW) query–context pairs to deliver high-accuracy, on-device semantic
+                            representations. I engineered the architecture for consumer hardware and laptops, achieving
+                            a
+                            +49.6% MRR improvement. I also quantized the model into a 4-bit GGUF format using
+                            Matryoshka Representation Learning (768&rarr;128D) to enable low-memory, air-gapped field
+                            search.
+                        </p>
+                    </a>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">EmbeddingGemma 2</span>
+                        <span class="tech-tag">270M Parameters</span>
+                        <span class="tech-tag">MRL (768&rarr;128D)</span>
+                        <span class="tech-tag">GGUF / On-Device</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Hugging Face</span>
+                    </div>
+                </div>
+                <div class="project-card__links">
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/US_State_Law_EmbeddingGemma_2.html"
+                        target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                        <span>Model Details</span> &rarr;
+                    </a>
+                    <a href="https://huggingface.co/CSI-lab/US-State-Law-EmbeddingGemma-2" target="_blank"
+                        rel="noopener noreferrer" class="project-link-btn">
+                        <span>Hugging Face</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Model 2: Washington-state-law-embedding-model-Base -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="project-card__thumb">
+                        <picture>
+                            <source srcset="images/models/wa_state_law_base.webp" type="image/webp">
+                            <img src="images/models/wa_state_law_base.jpg"
+                                alt="Washington-state-law-embedding-model-Base Banner" width="800" height="446"
+                                loading="lazy">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="project-card__badge">AI Model</span>
+                    </div>
+                    <h3 class="project-card__title">Washington-state-law-embedding-model-Base</h3>
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/WA_State_Law_Embedding_Base.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <p class="project-card__desc">
+                            I developed and fine-tuned this domain-adapted dense retrieval model with contrastive
+                            learning
+                            (Multiple Negatives Ranking Loss) on 500K+ Washington State legal query–context pairs,
+                            delivering high-accuracy semantic similarity and statutory cross-referencing. I tailored the
+                            training objective for precision ranking across complex state legislative corpora.
+
+                        </p>
+                    </a>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">Dense Retrieval</span>
+                        <span class="tech-tag">Contrastive Learning</span>
+                        <span class="tech-tag">MNRL Loss</span>
+                        <span class="tech-tag">Sentence Transformers</span>
+                        <span class="tech-tag">Legal AI</span>
+                        <span class="tech-tag">Hugging Face</span>
+                    </div>
+                </div>
+                <div class="project-card__links">
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/WA_State_Law_Embedding_Base.html"
+                        target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                        <span>Model Details</span> &rarr;
+                    </a>
+                    <a href="https://huggingface.co/CSI-lab/Washington-state-law-embedding-model-Base" target="_blank"
+                        rel="noopener noreferrer" class="project-link-btn">
+                        <span>Hugging Face</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Model 3: Washington-state-law-embedding-model-Large -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="project-card__thumb">
+                        <picture>
+                            <source srcset="images/models/wa_state_law_large.webp" type="image/webp">
+                            <img src="images/models/wa_state_law_large.jpg"
+                                alt="Washington-state-law-embedding-model-Large Banner" width="800" height="446"
+                                loading="lazy">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="project-card__badge">AI Model</span>
+                    </div>
+                    <h3 class="project-card__title">Washington-state-law-embedding-model-Large</h3>
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/WA_State_Law_Embedding_large.html"
+                        target="_blank" rel="noopener noreferrer">
+                        <p class="project-card__desc">
+                            I architected and built this flagship 1024-dimensional retrieval engine for enterprise-grade
+                            legal AI, enabling the translation of natural language scenarios into exact statutory
+                            matches. I
+                            designed its parameter-rich backbone to deliver maximum semantic accuracy for complex
+                            Washington
+                            State RAG pipelines.
+                        </p>
+                    </a>
+                    <div class="project-card__tags">
+                        <span class="tech-tag">1024D Embeddings</span>
+                        <span class="tech-tag">Enterprise RAG</span>
+                        <span class="tech-tag">Dense Retrieval</span>
+                        <span class="tech-tag">Domain Adaptation</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Hugging Face</span>
+                    </div>
+                </div>
+                <div class="project-card__links">
+                    <a href="https://complexsocialinteractionslab.github.io/Initiatives/WA_State_Law_Embedding_large.html"
+                        target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                        <span>Model Details</span> &rarr;
+                    </a>
+                    <a href="https://huggingface.co/CSI-lab/Washington-state-law-embedding-model-Large" target="_blank"
+                        rel="noopener noreferrer" class="project-link-btn">
+                        <span>Hugging Face</span> &rarr;
+                    </a>
+                </div>
+            </div>
+
+        </div> <!-- end models-grid -->
+
+        <!-- Subsection 2: Featured Systems & Research Platforms -->
+        <div class="works-subsection" data-aos="fade-up">
+            <h3 class="works-subsection-heading">Systems &amp; Research Platforms</h3>
+            <p class="works-subsection-desc">
+                Production-grade AI architectures, GovCloud law enforcement systems, and peer-reviewed research
+                frameworks.
+            </p>
+        </div>
 
         <div class="projects-grid">
 
@@ -942,9 +1107,9 @@
                         class="project-link-btn">
                         <span>WSU Research Lab</span> &rarr;
                     </a>
-                    <a href="https://github.com/Shlok-crypto" target="_blank" rel="noopener noreferrer"
+                    <a href="https://arxiv.org/abs/2512.15076" target="_blank" rel="noopener noreferrer"
                         class="project-link-btn">
-                        <span>GitHub Profile</span> &rarr;
+                        <span>arXiv Paper</span> &rarr;
                     </a>
                 </div>
             </div>
@@ -981,7 +1146,7 @@
             <!-- Project 4: Project Lighthouse -->
             <div class="project-card" data-aos="fade-up">
                 <div>
-                    <h3 class="project-card__title">Project Lighthouse</h3>
+                    <h3 class="project-card__title">Project Lighthouse: Privacy-Preserving Governance</h3>
                     <p class="project-card__desc">
                         Project Lighthouse is an open-source digital governance framework that empowers citizens with
                         direct control over their personal data. Built with a modular architecture, it enables
